@@ -1,0 +1,22 @@
+{
+    "data": {
+        "tokenBalances": [
+            {
+                "token": {
+                    "id": "bdf128b4-827b-5267-8f9e-243694989b5f",
+                    "blockchain": "BASE-SEPOLIA",
+                    "tokenAddress": "0x036cbd53842c5426634e7929541ec2318f3dcf7e",
+                    "standard": "ERC20",
+                    "name": "USDC",
+                    "symbol": "USDC",
+                    "decimals": 6,
+                    "isNative": false,
+                    "updateDate": "2025-03-28T13:46:32Z",
+                    "createDate": "2025-03-28T13:46:32Z"
+                },
+                "amount": "20",
+                "updateDate": "2026-05-23T05:45:15Z"
+            }
+        ]
+    }
+}

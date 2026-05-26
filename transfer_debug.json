@@ -1,0 +1,10 @@
+{
+    "code": 155258,
+    "message": "the asset amount owned by the wallet is insufficient for the transaction.",
+    "errors": [
+        {
+            "error": "invalid_value",
+            "message": "insufficient token balance (0) in wallet 77c9265f-53a3-5d6a-a723-70afc40b2492 for transaction, requiring > 0 native tokens"
+        }
+    ]
+}
