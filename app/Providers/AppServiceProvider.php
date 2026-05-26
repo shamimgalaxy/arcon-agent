@@ -17,13 +17,17 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-        $this->app->bind(\App\Services\BatchPaymentService::class, function ($app) {
-            return new \App\Services\BatchPaymentService(
-                $app->make(\App\Services\CircleService::class),
-                $app->make(\App\Services\PolicyService::class),
-            );
-        });
+   public function boot(): void
+{
+    if (env('APP_ENV') === 'production') {
+        \URL::forceScheme('https');
     }
+
+    $this->app->bind(\App\Services\BatchPaymentService::class, function ($app) {
+        return new \App\Services\BatchPaymentService(
+            $app->make(\App\Services\CircleService::class),
+            $app->make(\App\Services\PolicyService::class),
+        );
+    });
+}
 }
